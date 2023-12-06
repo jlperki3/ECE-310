@@ -1,0 +1,17 @@
+@0000 0E09 //load 8
+@0001 0601 //8 + 7 = 15
+@0002 1008 //store 15 into ans reg
+@0003 0509 //load 0, z flag = 1
+@0004 0707 //jumpz to next instruction
+@0005 0000 //data
+@0006 0007 //data
+@0007 1009 //load 15 back in
+@0008 0F03 //15 * 5 = 75
+@0009 0E02 //75 - 8 = 67
+@000A 0E07 //test jumpz, z flag = 0 therefore should do nothing
+@000B 0605 //67 ^ 7 = 68
+@000C 1008 //store 68 into ans reg
+@000D 0D06 //jump to self forever
+@000E 0008 //data
+@000F 0005 //data
+@0010 0000 //store goes here
